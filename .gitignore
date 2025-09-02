@@ -3,9 +3,11 @@ log_file.txt
 
 # Output data files
 transformed_data.csv
-*.csv
-*.json
-*.xml
+
+# Source data files (extracted from source.zip)
+source*.csv
+source*.json
+source*.xml
 
 # Python
 __pycache__/

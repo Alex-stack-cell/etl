@@ -35,7 +35,19 @@ This script aims to:
    cd etl
    ```
 
-2. **Create and activate virtual environment:**
+2. **Extract the source data:**
+
+   ```bash
+   unzip source.zip
+   ```
+
+   This will extract the following files:
+
+   - `source1.csv`, `source1.json`, `source1.xml`
+   - `source2.csv`, `source2.json`, `source2.xml`
+   - `source3.csv`, `source3.json`, `source3.xml`
+
+3. **Create and activate virtual environment:**
 
    ```bash
    python3 -m venv venv
@@ -44,7 +56,7 @@ This script aims to:
    venv\Scripts\activate     # On Windows
    ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
    ```bash
    pip install pandas
    ```
@@ -72,20 +84,18 @@ This script aims to:
 ```
 etl/
 ├── etl.py                 # Main ETL script
-├── source1.csv           # Input CSV data
-├── source1.json          # Input JSON data
-├── source1.xml           # Input XML data
-├── source2.csv           # Additional input data
-├── source2.json
-├── source2.xml
-├── source3.csv
-├── source3.json
-├── source3.xml
+├── source.zip             # Compressed source data files
 ├── transformed_data.csv   # Output transformed data
 ├── log_file.txt          # ETL operation logs
 ├── .gitignore            # Git ignore rules
 └── README.md             # This file
 ```
+
+**Note:** After extracting `source.zip`, you'll have access to:
+
+- `source1.csv`, `source1.json`, `source1.xml`
+- `source2.csv`, `source2.json`, `source2.xml`
+- `source3.csv`, `source3.json`, `source3.xml`
 
 ## Output
 
